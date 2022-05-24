@@ -11,4 +11,12 @@ public class CalculatorTest {
         int actual = Calculator.divide(a, b);
         assertEquals(expected, actual);
     }
+    @Test
+    public void testDivision_negative() {
+        int a = 10;
+        int b = -5;
+        int expected = -2;
+        int actual = Calculator.divide(a, b);
+        assertEquals(expected, actual);
+    }
 }
