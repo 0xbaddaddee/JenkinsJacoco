@@ -4,7 +4,10 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building'
-        withSonarQubeEnv(installationName: 'sonarqube-scanner', credentialsId: 'cf')
+        withSonarQubeEnv('sonarqube-scanner') {
+          echo 'HU'
+        }
+
       }
     }
 
