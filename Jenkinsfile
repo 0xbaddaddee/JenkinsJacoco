@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building'
-        withSonarQubeEnv('sonarqube-scanner') {
+        withSonarQubeEnv('SonarQube') {
           echo 'HU'
         }
 
